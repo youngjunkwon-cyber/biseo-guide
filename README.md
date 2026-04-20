@@ -16,7 +16,8 @@
 - [ ] Windows 10 이상 또는 macOS (본인 업무용 PC)
 - [ ] Claude Pro 플랜 이상 계정
 - [ ] Chrome 브라우저 + 회사 Slack에 로그인된 상태
-- [ ] **Anthropic API 키** — 용준님(@권용준)에게 Slack DM으로 요청하면 전달해드립니다 (회사 공용 키, 개인 부담 없음)
+- [ ] **Anthropic API 키** — 아래 "API 키" 섹션에 기재된 값 사용 (Anthropic 회사 Team 계정, 개인 부담 없음)
+  - ⚠️ **회사 Team API 키 발급 필요** — 발급 완료되면 이 가이드에 키 값 직접 기재 예정
 
 ## 설치 단계 (총 약 8분)
 
@@ -43,7 +44,7 @@ GitHub 저장소: https://github.com/youngjunkwon-cyber/slack-secretary
 2. Claude for Chrome을 이용해 Slack 앱 자동 생성
    (내가 브라우저에서 "허용" 한 번 클릭)
 3. Slack 토큰 자동 추출해서 .env에 기록
-4. Anthropic API 키를 나한테 물어봐 (용준님한테 Slack DM으로 받은 값을 붙여넣을 거야)
+4. Anthropic API 키를 나한테 물어봐 (아래 가이드에 기재된 회사 Team 계정 키를 붙여넣을 거야)
 5. npm install 후 npm start로 구동
 
 중간에 필요할 때만 나한테 물어봐. 나머지는 알아서 처리해줘.
@@ -52,7 +53,7 @@ GitHub 저장소: https://github.com/youngjunkwon-cyber/slack-secretary
 Claude Code가 자동 진행하며, 꼭 필요한 건 이거 두 가지:
 
 1. **Slack 앱 생성 페이지에서 "허용" 버튼 한 번 클릭** (브라우저 자동으로 열림)
-2. **Anthropic API 키 붙여넣기** — 이때 용준님한테 Slack DM으로 받은 키를 붙여넣으면 됩니다
+2. **Anthropic API 키 붙여넣기** — 이 가이드 하단의 "API 키" 섹션 값을 복사해서 붙여넣으면 됩니다
 
 ### ④ 구동 확인 (1분)
 
@@ -78,7 +79,17 @@ Claude Code가 자동 진행하며, 꼭 필요한 건 이거 두 가지:
 > 📌 **꼭 기억하세요**
 >
 > - **PC가 켜져 있는 동안에만** 비서가 작동합니다. PC 꺼진 시간대 메시지는 재구동 시 폴링으로 최대한 보완하지만 일부 놓칠 수 있어요
-> - Anthropic API 비용은 **회사 공용 계정으로 자동 결제**됩니다. 개인 부담 없음
+> - Anthropic API 비용은 **Anthropic 회사 Team 계정으로 자동 결제**됩니다. 개인 부담 없음
+
+## API 키
+
+아래 값을 설치 3단계에서 Claude Code가 물어볼 때 그대로 붙여넣으세요.
+
+```
+⚠️ 회사 Team API 키 발급 필요 — 발급 완료 후 이 자리에 기재됩니다
+```
+
+> 이 키는 Anthropic 회사 Team 계정에서 발급한 것으로, 사용료는 회사가 자동 결제합니다.
 
 ## 문제가 생기면
 
